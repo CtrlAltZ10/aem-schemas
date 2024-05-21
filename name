@@ -1,0 +1,41 @@
+{	
+	"$schema": "http://json-schema.org/draft/2020-12/schema",
+	"$id": "BCS-SCH-ACCT-002",
+	
+	"type": "object",
+	"properties": {
+		"name": { 
+			"type": "object",
+			"properties": {
+				"firstName": {
+					"description": "First Name",
+					"type": "string",
+					"maxLength": 30,
+					"pattern": "^([a-zA-Z]|[à-ü]|[À-Ü])+(([\\ \\'\\.\\-][a-zA-Z]|[à-ü]|[À-Ü])?[a-zA-Z]|[à-ü]|[À-Ü]*)*$"
+				},
+				"middleName": {
+					"description": "Middle Name",
+					"type": "string",
+					"maxLength": 30,
+					"pattern": "^([a-zA-Z]|[à-ü]|[À-Ü])+(([\\ \\'\\.\\-][a-zA-Z]|[à-ü]|[À-Ü])?[a-zA-Z]|[à-ü]|[À-Ü]*)*$"
+				},
+				"lastName": {
+					"description": "Last Name",
+					"type": "string",
+					"maxLength": 30,
+					"pattern": "^([a-zA-Z]|[à-ü]|[À-Ü])+(([\\ \\'\\.\\-][a-zA-Z]|[à-ü]|[À-Ü])?[a-zA-Z]|[à-ü]|[À-Ü]*)*$"
+				},
+				"suffix": {
+					"description": "Suffix",
+					"type": "string",
+					"maxLength": 30,
+					"pattern": "^([a-zA-Z]|[à-ü]|[À-Ü])+(([\\ \\'\\.\\-][a-zA-Z]|[à-ü]|[À-Ü])?[a-zA-Z]|[à-ü]|[À-Ü]*)*$"
+				}
+			},
+			"required": [
+				"firstName",
+				"lastName"
+			]
+		}
+	}
+}
