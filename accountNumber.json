@@ -1,0 +1,13 @@
+{
+	"$schema": "http://json-schema.org/draft/2020-12/schema",
+	"$id": "BCS-SCH-ACCT-001",
+	
+	"type": "object",
+	"properties": {
+		"accountNumber": { 
+			"description": "Schwab account number",
+			"type": "string",
+			"pattern": "^[0-9]{8,9}$"
+		}
+	}
+}
