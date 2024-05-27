@@ -1,11 +1,12 @@
 {	
-	"$schema": "http://json-schema.org/draft/2020-12/schema",
-	"$id": "BCS-SCH-ACCT-002",
+	"$schema": "http://json-schema.org/draft/2020-12/schema#",
+	"$id": "/aem-schemas/global/name.json",
 	
 	"type": "object",
 	"properties": {
 		"name": { 
 			"type": "object",
+			"required": [ "firstName", "lastName" ],
 			"properties": {
 				"firstName": {
 					"description": "First Name",
@@ -31,11 +32,7 @@
 					"maxLength": 30,
 					"pattern": "^([a-zA-Z]|[à-ü]|[À-Ü])+(([\\ \\'\\.\\-][a-zA-Z]|[à-ü]|[À-Ü])?[a-zA-Z]|[à-ü]|[À-Ü]*)*$"
 				}
-			},
-			"required": [
-				"firstName",
-				"lastName"
-			]
+			}
 		}
 	}
 }
